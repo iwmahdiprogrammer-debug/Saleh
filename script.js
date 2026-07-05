@@ -4,7 +4,7 @@ const statusEl = document.getElementById("status");
 const music = document.getElementById("music");
 
 // اسم مورد نیاز برای ورود
-const requiredName = "Saleh(صالح)"; // می‌تونی فارسی هم بذاری
+const requiredName = "صالح";
 
 startBtn.addEventListener("click", () => {
   const userName = nameInput.value.trim().toLowerCase();
@@ -15,7 +15,7 @@ startBtn.addEventListener("click", () => {
   }
 
   if (userName === requiredName.toLowerCase()) {
-    statusEl.textContent = "ورود موفق! خوش آمدی...";
+    statusEl.textContent = "ورود موفق! خوش آمدی صالح عزیز...";
     playWelcomeEffects();
   } else {
     statusEl.textContent = "اسم اشتباهه!";
@@ -31,7 +31,6 @@ function playWelcomeEffects() {
   statusEl.style.color = "#0ff";
   statusEl.style.fontSize = "28px";
 
-  // افکت نور
   const avatar = document.querySelector(".avatar");
   avatar.style.animation = "glow 0.5s infinite alternate";
 }
